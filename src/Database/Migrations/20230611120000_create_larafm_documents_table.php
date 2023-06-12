@@ -15,7 +15,7 @@ class CreateLarafmDocumentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('documents', function (Blueprint $table) {
+        Schema::create('larafm_documents', function (Blueprint $table) {
             $table->id();
             $table->string('filename');
             $table->string('slug');
@@ -36,6 +36,6 @@ class CreateLarafmDocumentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('documents');
+        Schema::dropIfExists('larafm_documents');
     }
 }
