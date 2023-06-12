@@ -4,6 +4,7 @@
     "type": "library",
     "version": "1.0.0",
     "require": {
+        "php": ">=7.4",
         "laravel/laravel": "^8.6",
         "intervention/image": "^2.7",
         "pawlox/video-thumbnail": "^3.0",
