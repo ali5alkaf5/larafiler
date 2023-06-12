@@ -1,7 +1,8 @@
 {
-    "name": "ali5alkaf5/larafiler",
+    "name": "larafiler/larafiler",
     "description": "Laravel well-structured file manager",
     "type": "library",
+    "version": "1.0.0",
     "require": {
         "laravel/laravel": "^8.6",
         "intervention/image": "^2.7",
