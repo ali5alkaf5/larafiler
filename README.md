@@ -97,4 +97,4 @@ LaraFiler is developed and maintained by [Ali Akbar](https://github.com/ali5alka
 We would like to express our gratitude to the Laravel community for their continuous support and inspiration.
 
 ## Changelog
-Detailed changes for each release will be documented in the [release notes](https://github.com/ali5alkaf5/releases).
+Detailed changes for each release will be documented in the [release notes](https://github.com/ali5alkaf5/larafiler/releases).
