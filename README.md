@@ -29,7 +29,8 @@ To upload a file using LaraFiler, you can use the `LaraFiler` facade's `upload` 
 use LaraFiler\Facades\LaraFiler;
 
 $file = $request->file('file');
-$path = LaraFiler::upload($file); // Must be instance of Illuminate\Http\UploadedFile
+$uploader = LaraFiler::upload($file); // Must be instance of Illuminate\Http\UploadedFile
+$document = $uploader->eloquent();
 ```
 
 The `upload` method accepts an instance of `Illuminate\Http\UploadedFile` as the first parameter. It will store the file in the appropriate location and return the file path.
@@ -76,7 +77,7 @@ The `delete` method will remove the file and thumbnails created from the storage
 ### LaraFiler Facade
 The LaraFiler facade provides the following methods:
 
-- `upload(UploadedFile $file): LaraFilerResponse`: Uploads the given file and returns the file path.
+- `upload(UploadedFile $file): LaraFilerResponse|LaraFilerUploader`: Uploads the given file and returns the file path.
 - `download(LarafmDocument|string $doc): LaraFilerResponse`: Downloads the file with the given path for download.
 - `inline(LarafmDocument|string $doc): LaraFilerResponse`: Streams the file with the given path for download.
 - `delete(LarafmDocument|string $doc): bool`: Deletes the file with the given path. Returns true on success.
