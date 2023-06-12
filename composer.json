@@ -1,0 +1,41 @@
+{
+    "name": "ali5alkaf5/larafiler",
+    "description": "Laravel well-structured file manager",
+    "type": "library",
+    "require": {
+        "laravel/laravel": "^8.6",
+        "intervention/image": "^2.7",
+        "pawlox/video-thumbnail": "^3.0",
+        "illuminate/database": "^8.83"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Akbar",
+            "email": "ali5alkaf5@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LaraFiler\\Facades\\": "src/Facades",
+            "LaraFiler\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "orchestra/testbench": "^6.27"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraFiler\\Providers\\LaraFilerServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php artisan package:discover"
+        ]
+    }
+}
