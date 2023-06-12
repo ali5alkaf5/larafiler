@@ -18,8 +18,9 @@
     ],
     "autoload": {
         "psr-4": {
+            "LaraFiler\\": "src/",
             "LaraFiler\\Facades\\": "src/Facades",
-            "LaraFiler\\": "src/"
+            "LaraFiler\\Database\\Migrations\\": "src/Database/Migrations"
         }
     },
     "minimum-stability": "stable",
