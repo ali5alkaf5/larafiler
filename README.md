@@ -21,6 +21,11 @@ php artisan vendor:publish --provider="LaraFiler\Providers\LaraFilerServiceProvi
 
 This will publish the `larafm.php` configuration file to your application's `config` directory. You can customize the settings in this file according to your needs.
 
+Don't forget to migrate larafm required table
+```bash
+php artisan migrate
+```
+
 ## Usage
 ### Uploading Files
 To upload a file using LaraFiler, you can use the `LaraFiler` facade's `upload` method. Here's an example:
