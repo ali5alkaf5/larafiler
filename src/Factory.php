@@ -1,13 +1,9 @@
 <?php
 
-namespace LaraFiler\Database;
+namespace LaraFiler;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
-use Illuminate\Database\Migrations\DatabaseMigrationRepository;
-use Illuminate\Database\Migrations\MigrationRepositoryInterface;
-use Illuminate\Database\Migrations\Migrator;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Filesystem\Filesystem;
 
 class Factory
 {

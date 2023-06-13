@@ -1,6 +1,6 @@
 <?php
 
-use LaraFiler\Database\Factory;
+use LaraFiler\Factory;
 use LaraFiler\Facades\LaraFiler;
 use LaraFiler\Providers\LaraFilerServiceProvider;
 use LaraFiler\LaraFilerUploader;

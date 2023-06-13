@@ -18,6 +18,9 @@ class LaraFilerServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../../config/larafm.php' => config_path('larafm.php'),
         ], 'config');
+        $this->publishes([
+            __DIR__ . '/../../database/migrations/CreateLarafmDocumentsTable.php' => database_path('migrations/2023_06_13_000000_create_larafm_documents_table.php'),
+        ], 'migration');
     }
 
     public function boot()
